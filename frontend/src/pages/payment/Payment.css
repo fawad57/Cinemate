@@ -1,0 +1,62 @@
+.payment {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+}
+
+.payment h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-box {
+  width: 100%;
+  padding: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.errors-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #45a049;
+}

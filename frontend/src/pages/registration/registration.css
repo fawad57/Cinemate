@@ -1,0 +1,258 @@
+/* CSS for the Form component */
+
+.reg {
+  background-image: url("../../assets/login_bg.jpg");
+  background-position-x: 380px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.head-container {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  left: -10px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* or "contain" based on your preference */
+  position: relative;
+  top: -10px;
+}
+
+.heading {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Container styles */
+.form-container {
+  max-width: 300px;
+  padding: 30px;
+  backdrop-filter: blur(7px) saturate(200%);
+  -webkit-backdrop-filter: blur(7px) saturate(200%);
+  background-color: rgba(21, 21, 25, 0.78);
+  border-radius: 5px;
+  border: rgba(255, 255, 255, 0.125);
+}
+
+/* Form styles */
+.form {
+  padding: 10px;
+}
+
+.toggle {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn-toggle {
+  width: 50%;
+  padding: 10px;
+  border: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  border-radius: 5px;
+  font-family: Arial;
+  font-weight: 900;
+  color: #3d3d3e;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.btn-toggle.active {
+  background-color: transparent;
+  font-weight: 900;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.div {
+  width: 3px;
+  height: 45px;
+  background-color: #1a1a1d;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.line {
+  color: #5a5a5b;
+  font-size: 15px;
+  position: relative;
+  left: 30px;
+  top: -30px;
+}
+
+.inputbox {
+  display: flex;
+  width: 270px;
+  background-color: #18181b;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.inputbox focus {
+  background-color: #2c2c2e;
+  outline: none;
+  border: 1px solid #3498db;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+/* Input styles */
+.form input {
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: #18181b;
+  background-color: #18181b;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form input:focus {
+  outline: none;
+  color: #007bff;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.form input:focus::placeholder {
+  color: #007bff;
+}
+
+.eico {
+  position: relative;
+  top: 5px;
+  right: -20px;
+  color: #464649;
+  font-size: 25px;
+}
+
+.pico {
+  position: relative;
+  top: 5px;
+  right: -20px;
+  color: #464649;
+  font-size: 25px;
+}
+
+/* Input focus styles */
+
+/* Button styles */
+
+.btn {
+  position: relative;
+  left: 35%;
+  background: #5148dc;
+  border: 0px;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 12px 30px 12px 30px;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.btn:hover {
+  background: rgb(139, 37, 159);
+  background: linear-gradient(
+    171deg,
+    rgba(139, 37, 159, 1) 0%,
+    rgba(121, 68, 202, 1) 85%,
+    rgba(0, 0, 0, 0.9988446062018558) 100%
+  );
+  color: #ffffff;
+  scale: 1.1;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.form-rem {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  position: relative;
+  left: -80px;
+}
+
+/* Remember me styles */
+.form-rem input[type="radio"] {
+  margin-right: 0px;
+  height: 15px;
+}
+
+.form-rem label {
+  font-size: 13px;
+  width: 50%;
+  position: relative;
+  top: 1px;
+  color: #929292;
+  left: -70px;
+}
+
+/* Forgot password styles */
+.form a {
+  position: relative;
+  left: -80px;
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #909090;
+}
+
+.errors-msg {
+  color: red;
+  font-size: 12px;
+  position: relative;
+  width: 100%;
+}
+
+/* SocialIcons.css */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons svg {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.social-icons svg:hover {
+  color: #333; /* Change color on hover */
+}
+
+.foot-btn {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40%;
+  gap: 10px;
+  position: relative;
+  left: 12%;
+}
+
+.btns-low {
+  color: #888889;
+}

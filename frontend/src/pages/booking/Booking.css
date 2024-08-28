@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.booking-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  max-width: 100%;
+  position: relative;
+  top: 120px;
+}
+
+.booking-box h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.booking-box p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-box input:focus {
+  border: 1px solid #6a11cb;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #6a11cb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #2575fc;
+}
+
+.input-box input,
+.input-box select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.seats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background: #3498db;
+  color: #fff;
+}
+
+.side-part {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  left: 50px;
+}
+
+.price-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 200px;
+  position: relative;
+  top: 70px;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.price-card h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #666;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  gap: 20px;
+}
+
+.price-row:last-child {
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.price-row span:first-child {
+  color: #888;
+}
+
+.price-row span:last-child {
+  color: #333;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

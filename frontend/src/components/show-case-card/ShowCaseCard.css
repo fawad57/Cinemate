@@ -1,0 +1,111 @@
+.movie-card {
+  width: 250px;
+  margin: 20px;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie-card .poster-img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.genres {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px;
+  color: #aad4f1;
+}
+
+.card-title {
+  color: #949399;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title h3 {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  justify-self: center;
+  color: white;
+}
+
+.ratingbox {
+  border-radius: 30px;
+  color: white;
+  background-color: #ffb10a;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+
+.bookbtn {
+  color: #ffb10a;
+  background-color: white;
+  border: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -5px;
+  margin-left: 10px;
+}
+
+.bookbtn:hover {
+  background-color: transparent;
+  color: #dc0042;
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-watchlist {
+  background-color: #1e90ff;
+  color: white;
+  font-size: 24px; /* Increase font size for the plus sign */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  top: -5px;
+}
+
+.button-watchlist:hover {
+  background-color: #1c86ee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.button-watchlist:active {
+  background-color: #1a7bdb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}
+
+.button-watchlist:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.5);
+}
